@@ -1,0 +1,60 @@
+/* Login Page Styles */
+.login-body {
+    background: radial-gradient(circle, #001a12, #000);
+    color: #ffffff;
+  }
+  
+  .login-container {
+    min-height: 100vh;
+  }
+  
+  .login-card {
+    background-color: rgba(0, 0, 0, 0.85);
+    border: 2px solid #64ffda;
+    box-shadow: 0px 4px 12px rgba(100, 255, 218, 0.3);
+    border-radius: 12px;
+    padding: 30px;
+    width: 350px;
+  }
+  
+  .login-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #64ffda;
+    text-shadow: 2px 2px 6px rgba(100, 255, 218, 0.5);
+  }
+  
+  .login-subtitle {
+    font-size: 1rem;
+    color: #e0e0e0;
+  }
+  
+  .form-control {
+    background-color: #001f12;
+    border: 2px solid #64ffda;
+    color: #ffffff;
+    transition: 0.3s;
+  }
+  
+  .form-control:focus {
+    border-color: #64ffda;
+    outline: none;
+    box-shadow: 0px 0px 8px rgba(100, 255, 218, 0.5);
+  }
+  
+  .btn-login {
+    background: linear-gradient(90deg, #64ffda, #32cd32);
+    border: none;
+    padding: 12px 20px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    color: #000;
+    transition: 0.3s ease, transform 0.2s ease;
+  }
+  
+  .btn-login:hover {
+    background: linear-gradient(90deg, #32cd32, #008f45);
+    transform: scale(1.1);
+  }
+  

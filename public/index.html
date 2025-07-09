@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>College Chatbot</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-custom fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">College Chatbot</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#chatbot">Chatbot</a></li>
+          <li class="nav-item"><a class="nav-link" href="#timetable">Timetable</a></li>
+          <li class="nav-item"><a class="nav-link" href="#notes">Notes</a></li>
+          <li class="nav-item"><a class="nav-link text-danger" id="logout-link">Logout</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Home Section -->
+  <section id="home" class="py-5 text-center">
+    <div class="container">
+      <h1>Welcome to College Chatbot</h1>
+      <p>Your one-stop portal for assistance and study resources.</p>
+    </div>
+  </section>
+
+  <!-- Chatbot Section -->
+  <section id="chatbot" class="py-5">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-8 col-lg-6">
+          <div class="card shadow-lg" style="border-radius: 15px;">
+            <div class="card-header bg-dark text-white">
+              <strong>Live Chat</strong>
+            </div>
+            <div class="card-body" id="chat-container">
+              <div class="d-flex mb-3">
+                <div class="p-2 bg-secondary rounded text-white">
+                  <small>Hello! I'm your college assistant. Ask me about timetables, notes, or general college information!</small>
+                </div>
+              </div>
+            </div>
+            <div class="card-footer bg-light">
+              <div class="input-group">
+                <input type="text" id="user-input" class="form-control" placeholder="Type your message...">
+                <button class="btn btn-success" id="send-btn">Send</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Timetable Section -->
+  <section id="timetable" class="py-5 bg-light text-dark">
+    <div class="container">
+      <h2>Current Semester Timetable</h2>
+      <p>Timetable details will be displayed here...</p>
+    </div>
+  </section>
+
+  <!-- Notes Section -->
+  <section id="notes" class="py-5">
+    <div class="container">
+      <h2>Notes Section</h2>
+      <p>Teachers can upload notes and students can view/download them.</p>
+    </div>
+  </section>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Custom Script -->
+  <script src="script.js"></script>
+
+</body>
+</html>

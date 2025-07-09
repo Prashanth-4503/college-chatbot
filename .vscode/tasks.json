@@ -1,0 +1,27 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "C/C++: cl.exe with vcvarsall",
+      "type": "shell",
+      "command": "cmd.exe",
+      "args": [
+        "/k",
+        "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Auxiliary\\Build\\vcvarsall.bat\" x64 && cl /Zi /EHsc /nologo /Fe\"${fileDirname}\\${fileBasenameNoExtension}.exe\" \"${file}\""
+      ],
+      "options": {
+        "cwd": "${fileDirname}",
+        "shell": {
+          "executable": "cmd.exe",
+          "args": ["/d", "/c"]
+        }
+      },
+      "problemMatcher": ["$msCompile"],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "detail": "Compiles C code with cl.exe and proper environment"
+    }
+  ]
+}
